@@ -90,8 +90,7 @@ fn print_department(department: &str, departments: &HashMap<String, Vec<String>>
 }
 
 fn print_employees_by_department(departments: &HashMap<String, Vec<String>>) {
-    let departments_copy = departments.clone();
-    let mut department_names: Vec<&String> = departments_copy.keys().collect();
+    let mut department_names: Vec<&String> = departments.keys().collect();
     department_names.sort();
 
     for department_name in department_names {
